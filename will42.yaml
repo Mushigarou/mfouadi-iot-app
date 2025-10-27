@@ -33,12 +33,14 @@ metadata:
 spec:
   ports:
   - name: 8085-8888
+    nodePort: 30080
     port: 8085
     protocol: TCP
     targetPort: 8888
   selector:
     app: will42
-  type: ClusterIP
+  type: NodePort
+
 
 ---
 
